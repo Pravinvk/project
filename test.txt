@@ -1,0 +1,36 @@
+package Wednesday;
+
+import java.lang.*;
+import java.util.*;
+ public class Emp1
+ {
+	int accno;
+	double balance;
+	String name,address,with;
+	  public void input()
+	    {
+		 Scanner ob=new Scanner(System.in);
+		 System.out.println(" Enter accno,name,address,balance,withdraw or deposite");
+		 accno=ob.nextInt();
+		 name=ob.next();
+		 with=ob.next();
+		 address=ob.next();
+		 balance=ob.nextInt();
+		 
+		}
+	      public void display()
+	       {
+		    System.out.println("the accno is " +accno);
+		    System.out.println("the name is " +name);
+		    System.out.println("the address is " +address);
+		    System.out.println("the balance is " +balance);
+		    System.out.println("Withdraw or Deposite " +with);
+	       }
+	      
+            public static void main(String[] args) 
+             {
+	          Emp1 obj=new Emp1();
+	          obj.input();
+	          obj.display();
+             }
+ }    
